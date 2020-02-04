@@ -6,7 +6,7 @@ class Author
     @posts = []
   end
   
-  def songs
+  def posts
     Post.all.select {|song| song.author = self}
   end
   
